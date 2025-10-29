@@ -1,0 +1,92 @@
+.testimonials {
+  margin: 80px auto;
+  padding: 0 60px;
+  position: relative;
+  max-width: 1200px;
+}
+
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212ea0;
+  z-index: 2;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.back-btn {
+  left: 0;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider ul {
+  display: flex;
+  width: 200%; /* only need 2x because 2 per view */
+  transition: transform 0.5s ease;
+}
+
+.slider ul li {
+  list-style: none;
+  width: 50%; /* two slides visible per view */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.slide {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 25px;
+  color: #676767;
+  line-height: 1.4;
+  height: 180px; /* reduced height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid #212ea0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.user-info h3 {
+  color: #212ea0;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.user-info span {
+  font-size: 13px;
+  color: #666;
+}
+
+.slide p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

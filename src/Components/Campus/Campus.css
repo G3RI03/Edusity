@@ -1,0 +1,47 @@
+.campus {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.galeri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* spacing between images */
+  margin-bottom: 40px;
+  flex-wrap: nowrap; /* keeps images in one row */
+  overflow-x: auto; /* scroll if not enough space */
+  padding-bottom: 10px;
+}
+
+.galeri img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeri img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.btn.dark-btn {
+  background-color: #0b2dbf; /* adjust to match your theme */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn.dark-btn img {
+  width: 20px;
+  height: 20px;
+}
