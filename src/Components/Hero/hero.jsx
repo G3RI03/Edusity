@@ -1,5 +1,5 @@
 import React from 'react'
-import './hero.css'
+import './Hero.css'
 import Arrow from '../../assets/Arrow.png'
 const Hero = () => {
   return (
